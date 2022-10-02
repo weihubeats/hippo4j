@@ -232,11 +232,23 @@ public class ThreadPoolBuilder implements Builder<ThreadPoolExecutor> {
      * @return ThreadPoolExecutor
      */
     public static ThreadPoolExecutor builderDynamicPoolById(String threadPoolId) {
-        return ThreadPoolBuilder.builder()
+        return builderId(threadPoolId, true);
+    }
+
+    /**
+     * Create thread pool by thread pool id
+     * @param threadPoolId
+     * @return
+     */
+    public static ThreadPoolExecutor builderId(String threadPoolId) {
+        return builderId(threadPoolId, false);
+    }
+
+    private static ThreadPoolExecutor builderId(String threadPoolId, boolean isDynamicPool) {
+        ThreadPoolBuilder threadPoolBuilder = ThreadPoolBuilder.builder()
                 .threadFactory(threadPoolId)
-                .threadPoolId(threadPoolId)
-                .dynamicPool()
-                .build();
+                .threadPoolId(threadPoolId);
+        return isDynamicPool ? threadPoolBuilder.dynamicPool().build() : threadPoolBuilder.build();
     }
 
     private static ThreadPoolExecutor buildPool(ThreadPoolBuilder builder) {
