@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Hippo4j 团队
 
-非常感谢通过开源对 Hippo4j 贡献的开发者，项目始终保持高质量编码，以社区的力量去发展项目，并以项目反馈社区成员。我们期待对 Hippo4j 有兴趣的小伙伴加入团队，与社区共同成长。
+非常感谢通过开源对 Hippo4j 贡献的开发者，项目始终保持高质量编码，以社区的力量去发展项目，并以项目反馈社区成员。我们期待对开源有兴趣的小伙伴加入团队，与社区共同成长。
 
 ## 成员
 
@@ -17,9 +17,9 @@ sidebar_position: 1
     <td align="center" width="26%">联系方式</td>
   </tr>
   <tr>
-    <td align="center" ><a href="https://github.com/mageeric"><img src="https://avatars.githubusercontent.com/u/77398366?v=4?s=64" width="64px;"/></a></td>
+    <td align="center" ><a href="https://github.com/magestacks"><img src="https://avatars.githubusercontent.com/u/77398366?v=4?s=64" width="64px;"/></a></td>
     <td align="center" >马称</td>
-    <td align="center" ><a href="https://github.com/mageeric">mageeric</a></td>
+    <td align="center" ><a href="https://github.com/magestacks">magestacks</a></td>
     <td align="center" ><a href="https://www.xiaomage.info/">小马哥的技术专栏</a></td>
     <td align="center" >machen@apache.org</td>
   </tr>
@@ -42,7 +42,7 @@ sidebar_position: 1
     <td align="center">魏虎</td>
     <td align="center" ><a href="https://github.com/weihubeats">weihubeats</a></td>
     <td align="center" ><a href="https://weihubeats.blog.csdn.net/">weihubeats</a></td>
-    <td align="center" >weihubeats@163.com</td>
+    <td align="center" >weihu@apache.org</td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/BigXin0109"><img src="https://avatars.githubusercontent.com/u/24769514?v=4?s=64" width="64px;"/></a></td>
@@ -71,6 +71,13 @@ sidebar_position: 1
     <td align="center" ><a href="https://github.com/Createsequence">Createsequence</a></td>
     <td align="center" ><a href="https://blog.xiajibagao.top">Createsequence's Blog</a></td>
     <td align="center" >841396397@qq.com</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/road2master"><img src="https://avatars.githubusercontent.com/u/53806703?v=4" width="64px;"/></ a></td>
+    <td align="center">黎金星</td>
+    <td align="center"><a href="https://github.com/road2master">road2master</a></td>
+    <td align="center"><a href="https://www.cnblogs.com/road2master/">road2master's Blog</a></td>
+    <td align="center">lijinxingerm@gmail.com</td>
   </tr>
 </table>
 

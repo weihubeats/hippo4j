@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'HIPPO-4J',
+    title: 'Hippo4j',
     tagline: '动态可观测线程池框架，为业务系统提高线上运行保障能力',
     url: 'https://hippo4j.cn',
     baseUrl: '/',
@@ -106,8 +106,9 @@ const config = {
                       position: "left",
                       activeBaseRegex: `/community/`,
                     },
-                    { to: "/team", label: "团队", position: "left" },
-                    { to: "/users", label: "用户", position: "left" },
+                    /*{ to: "/team", label: "团队", position: "left" },*/
+                    { to: "/users", label: "采用公司", position: "left" },
+                    { to: "/group", label: "加群沟通", position: "left" },
                     /*{to: '/blog', label: '博客', position: 'left'},*/
                     {
                         href: 'http://console.hippo4j.cn/index.html',
@@ -115,8 +116,8 @@ const config = {
                         position: 'left',
                     },
                     {
-                        href: 'https://xiaomage.info/knowledge-planet',
-                        label: '🥇代码实战课',
+                        href: 'https://sourl.cn/Fyp7y4',
+                        label: '👉 刚果商城',
                         position: 'left',
                     },
                     {
@@ -124,8 +125,8 @@ const config = {
                         position: 'right',
                         dropdownActiveClassDisabled: true,
                     },
-                    {type: 'localeDropdown', position: 'right'},
 
+                    {type: 'localeDropdown', position: 'right'},
                     /*{
                         href: 'https://gitee.com/mabaiwancn/hippo4j',
                         label: 'Gitee',
@@ -170,7 +171,7 @@ const config = {
                         items: [
                             {
                                 label: 'Group',
-                                href: 'https://hippo4j.cn/docs/user_docs/other/group',
+                                href: 'https://hippo4j.cn/group',
                             },
                             {
                                 label: 'WeChat',
@@ -183,7 +184,7 @@ const config = {
                         items: [
                             {
                                 label: 'Gitee',
-                                href: 'https://gitee.com/magegoofy/hippo4j',
+                                href: 'https://gitee.com/magestack/hippo4j',
                             },
                             {
                                 label: 'GitHub',

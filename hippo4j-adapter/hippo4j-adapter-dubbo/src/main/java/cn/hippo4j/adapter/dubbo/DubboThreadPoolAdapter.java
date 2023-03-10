@@ -21,6 +21,7 @@ import cn.hippo4j.adapter.base.ThreadPoolAdapter;
 import cn.hippo4j.adapter.base.ThreadPoolAdapterParameter;
 import cn.hippo4j.adapter.base.ThreadPoolAdapterState;
 import cn.hippo4j.common.toolkit.ReflectUtil;
+import cn.hippo4j.common.toolkit.ThreadPoolExecutorUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.common.Version;
 import org.apache.dubbo.common.extension.ExtensionLoader;
@@ -83,8 +84,7 @@ public class DubboThreadPoolAdapter implements ThreadPoolAdapter, ApplicationLis
         }
         int originalCoreSize = executor.getCorePoolSize();
         int originalMaximumPoolSize = executor.getMaximumPoolSize();
-        executor.setCorePoolSize(threadPoolAdapterParameter.getCorePoolSize());
-        executor.setMaximumPoolSize(threadPoolAdapterParameter.getMaximumPoolSize());
+        ThreadPoolExecutorUtil.safeSetPoolSize(executor, threadPoolAdapterParameter.getCorePoolSize(), threadPoolAdapterParameter.getMaximumPoolSize());
         log.info("[{}] Dubbo consumption thread pool parameter change. coreSize: {}, maximumSize: {}",
                 threadPoolKey,
                 String.format(CHANGE_DELIMITER, originalCoreSize, executor.getCorePoolSize()),
@@ -114,7 +114,7 @@ public class DubboThreadPoolAdapter implements ThreadPoolAdapter, ApplicationLis
             ConcurrentMap<Integer, ExecutorService> executorServiceMap = data.get(poolKey);
             executorServiceMap.forEach((key, value) -> DUBBO_PROTOCOL_EXECUTOR.put(String.valueOf(key), (ThreadPoolExecutor) value));
         } catch (Exception ex) {
-            log.error("Failed to get Dubbo {}.X protocol thread pool", isLegacyVersion ? "2" : "3", ex);
+            log.error("Failed to get Dubbo {} protocol thread pool", Version.getVersion(), ex);
         }
     }
 }

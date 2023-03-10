@@ -47,6 +47,16 @@ spring:
         thread-pool-types: dynamic # 采集线程池的类型。eg：dynamic、web、adapter。可任意配置，默认 dynamic
 ```
 
+如果使用 `micrometer` 类型的监控指标，需要添加以下依赖。
+
+```xml
+<dependency>
+    <groupId>cn.hippo4j</groupId>
+    <artifactId>hippo4j-spring-boot-starter-monitor-micrometer</artifactId>
+    <version>1.4.3-upgrade</version>
+</dependency>
+```
+
 项目启动，访问 `http://localhost:29999/actuator/prometheus` 出现 `dynamic_thread_pool_` 前缀的指标，即为成功。
 
 ![](https://images-machen.oss-cn-beijing.aliyuncs.com/image-20220912220401016.png)
@@ -99,7 +109,7 @@ Grafana 访问 `http://localhost:3000/datasources` 导入 Prometheus 数据源�
 
 > 如果 Prometheus 为 Docker 方式部署，HTTP URL 需要为本地 IP，比如：http://192.168.1.5:9090
 
-关注公众号 `龙台的技术笔记`，回复：`监控`，获取 Hippo4J Grafana DashBoard JSON 配置。
+关注公众号 `龙台的技术笔记`，回复：`监控`，获取 Hippo4j Grafana DashBoard JSON 配置。
 
 |                                                    公众号                                                    |                                                           回复关键词                                                           |
 |:------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
@@ -113,7 +123,7 @@ Grafana 访问 `http://localhost:3000/datasources` 导入 Prometheus 数据源�
 
 ![](https://images-machen.oss-cn-beijing.aliyuncs.com/image-20220912225700200.png)
 
-即可使用炫酷的 Hippo-4J 动态线程池监控 DashBoard。大家伙儿也可以根据个人喜好进行定制 DashBoard，如果觉得有优化点，欢迎和我联系贡献。
+即可使用炫酷的 Hippo4j 动态线程池监控 DashBoard。大家伙儿也可以根据个人喜好进行定制 DashBoard，如果觉得有优化点，欢迎和我联系贡献。
 
 ![](https://images-machen.oss-cn-beijing.aliyuncs.com/image-20220912225813972.png)
 
