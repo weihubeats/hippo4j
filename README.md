@@ -1,9 +1,9 @@
 
-## 动态可观测线程池，通过对 JDK 线程池的增强，以及扩展三方框架底层线程池等功能，为业务系统提高线上运行保障能力
+## 动态可观测线程池，提高系统运行保障能力
 
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Build Status](https://github.com/opengoofy/hippo4j/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/opengoofy.hippo4j)
+[![Build Status](https://github.com/opengoofy/hippo4j/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/opengoofy/hippo4j)
 
 ![](https://img.shields.io/github/stars/opengoofy/hippo4j?color=5470c6)
 ![](https://img.shields.io/github/forks/opengoofy/hippo4j?color=3ba272)
@@ -64,6 +64,11 @@ For full documentation & more details, visit: [Docs](https://www.hippo4j.cn)
 - 动态化插件 - 内置多种线程池插件，支持用户自定义插件以及运行时扩展。
 - 多版本适配 - 经过实际测试，已支持客户端 SpringBoot 1.5.x => 2.7.5 版本（更高版本未测试）。
 
+### 架构设计
+
+---
+<img width="1307" alt="image" src="https://user-images.githubusercontent.com/106363931/233792824-f879500f-fea1-4872-be15-957236f6bf2b.png">
+
 ### 快速开始
 
 ---
@@ -86,9 +91,10 @@ For full documentation & more details, visit: [Docs](https://www.hippo4j.cn)
 
 如果大家想要实时关注 Hippo4j 更新的文章以及分享的干货的话，可以关注我的公众号。
 
-使用过程中有任何问题，或者对项目有什么建议，添加微信备注：`hippo4j`，和 `1000+` 志同道合的朋友交流讨论。
+使用过程中有任何问题，或者对项目有什么建议，关注公众号回复：加群，和 `1000+` 志同道合的朋友交流讨论。
 
-<img width="558" alt="image" src="https://user-images.githubusercontent.com/77398366/222431518-1879472e-291f-403f-90da-b6cc4dc78f1a.png">
+<img width="586" alt="image" src="https://user-images.githubusercontent.com/77398366/225888779-367f42a6-8401-4867-8e80-44214e1d17c1.png">
+
 
 ### 深入原理
 
@@ -114,7 +120,7 @@ For full documentation & more details, visit: [Docs](https://www.hippo4j.cn)
 - [[ JavaGuide ]](https://github.com/Snailclimb/JavaGuide)：一份涵盖大部分 Java 程序员所需要掌握的核心知识。
 - [[ toBeBetterJavaer ]](https://github.com/itwanger/toBeBetterJavaer)：一份通俗易懂、风趣幽默的 Java 学习指南。
 - [[ Jpom ]](https://gitee.com/dromara/Jpom)：简而轻的低侵入式在线构建、自动部署、日常运维、项目监控软件。
-- [[ CongoMall ]](https://sourl.cn/VERS4y)：刚果商城基于 DDD 开发，内置分布式锁、分布式事务、分库分表、消息队列、服务监控等功能。
+- [[ CongoMall ]](https://gitee.com/opengoofy/congomall)：作者的另一个开源项目刚果商城，包含了商城业务和基础架构两大模块。
 
 ### 贡献者
 
@@ -130,6 +136,6 @@ For full documentation & more details, visit: [Docs](https://www.hippo4j.cn)
 
 ---
 
-Hippo4j 社区收到 Jetbrains 多份 Licenses，并已分配项目 [活跃开发者](https://hippo4j.cn/team)，非常感谢 Jetbrains 对开源社区的支持。
+Hippo4j 社区收到 Jetbrains 多份 Licenses，并已分配项目 [活跃开发者](https://hippo4j.cn/community/team/)，非常感谢 Jetbrains 对开源社区的支持。
 
 ![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)
