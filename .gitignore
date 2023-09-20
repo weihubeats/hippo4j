@@ -36,7 +36,7 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+# .vscode/
 
 # maven plugin ignore
 *.gpg
@@ -51,3 +51,6 @@ docs/.docusaurus
 ### Docker ###
 docker/conf
 docker/target
+
+### OS ###
+.DS_Store
